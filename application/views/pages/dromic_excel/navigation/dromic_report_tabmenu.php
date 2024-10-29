@@ -11,4 +11,7 @@
   <li>
   	<a id="toexcel_sad_summary" data-toggle="tab" class="btn btn-sm btn-danger tabpill" href="#summary_sex_age_breakdown" style="border-radius:0px; color:#fff; border-radius: 5px; padding: 5px; font-size: 15px">SAD Data Summary (Now)</a>
   </li>
+	<li>
+  	<a id="toexcel_dashboard_summary" data-toggle="tab" class="btn btn-sm btn-danger tabpill" href="#dashboard_summary" style="border-radius:0px; color:#fff; border-radius: 5px; padding: 5px; font-size: 15px">Dashboard Summary</a>
+  </li>
 </ul>

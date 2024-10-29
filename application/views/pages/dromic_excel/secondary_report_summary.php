@@ -537,5 +537,87 @@
 	  		</table>	
 		  </div>
 		</div>
+		<div id="dashboard_summary" class="tab-pane fade">
+			<div class="col-md-12" style="border:1px solid gray; " id="tbl_masterquery_dashboard_summary">
+				<br>
+		    	<table style="width:100%; font-size: 11px" id="tbl_masterquery_rev_dashboard_summary" class="tbl_masterquery_revs">
+		    		<thead>
+						<th rowspan="3" colspan="2" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000; font-family: Arial">
+								<b>DISASTER DETAILS</b>
+							</th>
+							<th rowspan="3" colspan="2" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000; font-family: Arial">
+								<b>AFFECTED AREAS</b>
+							</th>
+							<th rowspan="3" colspan="3" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000; font-family: Arial">
+								<b>NUMBER OF AFFECTED</b>
+							</th>
+							<th rowspan="3" colspan="2" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000; font-family: Arial">
+								<b>NUMBER OF ECs</b>	
+							</th>
+							<td colspan="12" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000; font-family: Arial">
+								<b>TOTAL NUMBER SERVED</b>
+							</td>
+							<td rowspan="3" colspan="3" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000; font-family: Arial; padding:0px">
+								<b>NO. OF DAMAGED HOUSES</b>
+							</td>
+							<td rowspan="3" colspan="4" style="vertical-align: middle; text-align:center; border:1px solid #000; font-family: Arial; background-color: #B6DDE8; color: #000">
+								<b>TOTAL COST OF ASSISTANCE (PhP)</b>
+							</td>
+							</tr>
+							<tr>
+								<td colspan="4" style="vertical-align: middle; text-align:center; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;">
+									<b>INSIDE EC</b>
+								</td>
+								<td colspan="4" style="vertical-align: middle; text-align:center; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;">
+									<b>OUTSIDE EC</b>
+								</td>
+								<td colspan="4" style="vertical-align: middle; text-align:center; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;">
+									<b>TOTAL SERVED</b>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="vertical-align: middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Families </td>
+								<td colspan="2" style="vertical-align: middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Persons </td>
+								<td colspan="2" style="vertical-align: middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Families </td>
+								<td colspan="2" style="vertical-align: middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Persons </td>
+								<td colspan="2" style="vertical-align: middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Families </td>
+								<td colspan="2" style="vertical-align: middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Persons </td>
+							</tr>
+							<tr>
+							<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> DISASTER INCIDENT</td>
+							<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> AS OF</td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Province</td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> City/Municipality</td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Brgys. </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Families </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Persons </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Cum </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Now </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Total </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Totally </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> Partially </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> DSWD </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> LGU </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> NGOs/OTHERS </td>
+								<td style="vertical-align:middle; text-align:center; font-weight:bold; border:1px solid #000; background-color: #B6DDE8; color: #000; font-family: Arial;"> GRAND TOTAL </td>
+							</tr>
+		    		</thead>
+		    		<tbody>
+		    		</tbody>
+		    	</table>
+		  </div>
+		</div>
 	</div>
 </div>

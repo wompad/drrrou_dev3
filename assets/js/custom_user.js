@@ -3728,6 +3728,8 @@ function get_dromic(n){
 
 				$("#tbl_masterquery_rev_summary tbody").empty();
 
+				$("#tbl_masterquery_rev_dashboard_summary tbody").empty();
+
 				$("#tbl_cost_assistance_summary tbody").empty();
 
 				for(var p in provinces){
@@ -4137,6 +4139,40 @@ function get_dromic(n){
 												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+addCommaMoney(isnull(blgu_asst))+"</td>"+
 												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+addCommaMoney(isnull(bngo_asst))+"</td>"+
 												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+addCommaMoney(isnull(btotal_asst))+"</td>"+
+											"</tr>"
+										)
+
+										$("#tbl_masterquery_rev_dashboard_summary tbody").append(
+
+											"<tr style='cursor:pointer'>"+
+												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+rs.query_title[0].disaster_name.toUpperCase()+"</td>"+
+												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+todate(rs.query_title[0].ddate)+ "-"+rs.query_title[0].asoftime+"</td>"+
+												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+provinces[p].name+"</td>"+
+												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+rs.city[mm].municipality_name.toUpperCase()+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(all_affected_brgy)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(all_affected_f)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(all_affected_p)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(ec_cum)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(ec_now)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].family_cum_i)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].family_now_i)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].person_cum_i)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].person_now_i)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].family_cum_o)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].family_now_o)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].person_cum_o)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].person_now_o)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].family_cum_s_t)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].family_now_s_t)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].person_cum_s_t)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(rs.masterquery[h].person_now_s_t)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(btott_d)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(btot_d)+"</td>"+
+												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(bpart_d)+"</td>"+
+												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(bdswd_asst)+"</td>"+
+												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(blgu_asst)+"</td>"+
+												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(bngo_asst)+"</td>"+
+												"<td style='font-weight: lighter; text-align:right; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(btotal_asst)+"</td>"+
 											"</tr>"
 										)
 
@@ -5771,6 +5807,14 @@ function isnullperd(item){
 }
 
 function isnulls(item){
+	if(item == null || item == 0){
+		return "0";
+	}else{
+		return item;
+	}
+}
+
+function isnullZero(item){
 	if(item == null || item == 0){
 		return "0";
 	}else{

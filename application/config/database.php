@@ -76,7 +76,7 @@ $query_builder = TRUE;
 $host = gethostbyname($_SERVER['SERVER_NAME']);
 
 $db['default'] = array(
-	'dsn'	=> "pgsql:host=172.31.240.238;port=5432;dbname=cdrrims_db_dev",
+	'dsn'	=> "pgsql:host=172.31.240.238;port=5432;dbname=cdrrims_db_dev2",
 	'hostname' => '172.31.240.238',
 	'username' => 'cdrrims',
 	'password' => 'M@tth3w6cdrr!m$',

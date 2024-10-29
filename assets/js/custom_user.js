@@ -4142,12 +4142,14 @@ function get_dromic(n){
 											"</tr>"
 										)
 
+										var province_name = provinces[p].name.toLowerCase() === 'province of dinagat islands' ? 'dinagat islands' : provinces[p].name.toLowerCase();
+
 										$("#tbl_masterquery_rev_dashboard_summary tbody").append(
 
 											"<tr style='cursor:pointer'>"+
 												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+rs.query_title[0].disaster_name.toUpperCase()+"</td>"+
 												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+todate(rs.query_title[0].ddate)+ "-"+rs.query_title[0].asoftime+"</td>"+
-												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+provinces[p].name+"</td>"+
+												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+province_name.toUpperCase()+"</td>"+
 												"<td style='border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF;'>"+rs.city[mm].municipality_name.toUpperCase()+"</td>"+
 												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(all_affected_brgy)+"</td>"+
 												"<td style='font-weight: lighter; text-align:center; border:1px solid #000; color: #000; font-family: Arial; background-color: #FFFFFF'>"+isnullZero(all_affected_f)+"</td>"+
